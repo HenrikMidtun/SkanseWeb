@@ -1,0 +1,40 @@
+div#colorDiv
+{
+    background-color: brown;
+    width:100px;
+    height: 80px;
+}
+div#readme
+{
+    border: 1px solid black;
+    width: 50%;
+    background-color: lightgrey;
+    padding: 5px;
+}
+table#tasks
+{
+    border: 1px solid black;  
+    border-spacing: 10px;
+    
+}
+caption
+{
+    font-size: larger;
+    color: rebeccapurple;
+}
+th
+{
+    border: 1px solid black;
+    padding: 15px;
+    background-color: lightblue;
+}
+td
+{
+    border: 1px solid black;
+    padding: 15px;
+    background-color: beige;
+}
+.text_entry
+{
+    color: pink;
+}

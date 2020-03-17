@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
+        <title>HelloWebsite</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="RandomColor.js"></script>
+        <script src="DoneTask.js"></script>
+
+    </head>
+    <body>
+        
+        <button onclick="SetRandomColor()">
+            Print en div under m/random farge
+        </button>
+
+        <div id="colorDiv"></div>
+
+        <script src="sum.js"></script>
+        <div id="readme">
+            Denne siden fungerer som en oversikt over gjøremålene i Skansegata 24.
+            
+            Gjøremålene skal primært sett være gjengående og periodiske av natur.
+            Dette kan for eksempel være å vaske ut bosset.</br>
+        </br>
+            På siden er det mulig å:</br>
+            1. Legge inn at man har gjort et gjøremål.</br>
+            2. Legge til nye gjøremål.</br>
+        </br>
+            Informasjon om gjøremål skal dekke.</br>
+            -En tittel.</br>
+            -En kort beskrivelse av gjøremålet.</br>
+            -Når det ble gjort sist.</br>
+        </div>
+
+        <form action="https://www.w3docs.com/" method="get" target="_blank">
+            <button type="submit">Click me</button>
+        </form>
+        
+        <table id="tasks" style="width:50%">
+            <caption> Felles liste over gjøremål</caption>
+            <thead>
+                <tr class="table-header">
+                    <th>
+                        Jobb
+                    </th>
+                    <th>
+                        Beskrivelse
+                    </th>
+                    <th>
+                        Sist gjort
+                    </th>
+                    <th>
+                        Gjøres innen
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr id="0" class="table-entry">
+                    <td>
+                        Vaske do
+                    </td>
+                    <td>
+                        Vaske doen, husk å ta kantene og å bruke klor
+                    </td>
+                    <td>
+                        10.03.2020
+                    </td>
+                    <td>
+                        20.03.2020
+                    </td>
+                    <td>
+                        <button onclick="onCompletedTask(this)">Gjort</button>
+                    </td>
+                </tr>
+                <tr id="1" class = "table-entry">
+                    <td>
+                        Ta spesialboss
+                    </td>
+                    <td>
+                        Ta ut boss til stasjonen nede i gaten.
+                    </td>
+                    <td>
+                        13.03.2020
+                    </td>
+                    <td>
+                        17.03.2020
+                    </td>
+                    <td>
+                        <button onclick="onCompletedTask(this)">Gjort</button>
+                    </td>
+                </tr>              
+            </tbody>
+            
+        </table>
+
+        <div style="padding:15px;">
+            <h3>Legg til et gjøremål.</h3>
+
+            <form method="POST">
+                <label for="task_title">Jobb:</label>
+                <input type="text" id="task_title" name="task_title"><br><br>
+
+                <label for="task_desc">Beskrivelse:</label>
+                Default width 20 characters 
+                <input type="text" id="task_desc" name="task_desc"><br><br>
+
+                <label for="task_ldone">Sist Gjort:</label>
+                <input type="text" id="task_ldone" name="task_ldone"><br><br>
+
+                <label for="task_period">Hvor ofte:</label>
+                <input type="text" id="task_period" name="task_period"><br><br>
+
+                <input type="submit" value="Submit">
+              </form> 
+
+        </div>
+
+        <div>
+            <h3 style="color:rgb(20, 30, 58);">By NuFon</h3>
+        </div>
+    </body>
+</html>
+
